@@ -1,2 +1,1 @@
-# SnifferDog
-Packet Capture Tool
+# PacketCaptureTool

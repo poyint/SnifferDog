@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>806</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:#FFF</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>761</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:#000441</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>746</width>
+       <height>1639</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">color:#FFF</string>
+        </property>
+        <property name="text">
+         <string>Sniffer Dog is a network packet analyzer. A network packet analyzer presents captured packet data in as much detail as possible.
+ 
+The following are some of the features that Sniffer Dog provides:
+Available for UNIX and Windows.
+Capture live packet data from a network interface.
+Open pcap files containing packet data.
+Display packets with very detailed protocol information.
+Save packet data captured.
+Filter packets on many criteria.
+System Requirements:
+The amount of resources Sniffer Dog needs depends on your environment and on the size of the capture file you are analyzing. Larger capture files may require more memory and disk space. Sniffer Dog runs on any version of Windows and Linux.
+Start Sniffer Dog:
+ You can start Sniffer Dog using the button “MAX! GO SNIFF!” in the first window.
+ 
+The main window:
+Sniffer Dog’s main window consists of parts that are commonly known from many other GUI programs:
+-The menu is used to start actions.
+-Some buttons provide quick access to frequently used items from the menu (start,stop,open,save).
+-The filter toolbar allows users to set display filters to filter which packets are displayed.
+-The packet list pane displays a summary of each packet captured. By clicking on packets in this pane you display the packet details pane that shows the packet selected in the packet list pane in more detail and the packet bytes pane which displays the data from the packet selected in the packet list pane, and highlights the field selected in the packet details pane.
+ 
+Main Window Navigation : shortcuts
+Ctrl+o: open a pcap file to view the captured packets in the file.
+Ctrl+s: Save the current capture to whatever file you would like.
+Ctrl+h: display the “help” window that brings up a basic help.
+ 
+The Menu:
+Sniffer Dog’s main menu is located at the top of the main window.
+The main menu contains the following items:
+File:
+This menu contains items to open and save capture files.
+Edit:
+This menu contains items to start or stop capturing.
+Help:
+This menu contains an item to help the user.
+ 
+Start Capturing:
+The following methods can be used to start capturing packets with Sniffer Dog:
+-You can click the start button in the main window.
+-You can select the start item in the edit menu.
+ 
+Open Capture Files:
+Sniffer Dog can read the previously saved capture files. To read them, simply select the File → Open menu or use the shortcut ctrl+o.
+ 
+Saving Captured Packets:
+You can save captured packets by using the File → Save menu item or using the shortcut Ctrl+s. We can save the current capture to a .pcap file.
+ 
+ 
+Stop the running capture:
+A running capture session will be stopped in one of the following ways:
+The Stop button in the main window.
+The Edit→ Stop menu item.
+ 
+ 
+Filtering Packets While Viewing:
+Display filters allow you to concentrate on the packets you are interested in while hiding the currently uninteresting ones. They allow you to only display packets based on:
+-Protocol
+-The presence of a field
+-The values of fields
+-… and a lot more!
+ 
+We use date, length, macs, macd, ips, ipd, ports, portd, protocol, type.
+To only display for instance packets containing a particular protocol, type the protocol name in the display filter toolbar of the Sniffer Dog window and press enter to apply the filter.
+Filter comparison operators:
+equal : =    (example : type=’ICMP’).
+Not equal : &lt;&gt; or !=    (example: ips!=10.0.0.5).
+Greater than : &gt; (example: length&gt;5).
+Less than : &lt; (example: length&lt;5).
+Greater than or equal to : &gt;= (example : length&gt;=5).
+Less than or equal to : &lt;= (example: length&lt;=5).
+null value: Is Null (example: length is null).
+not null value: Is Not Null (example: length is not null).
+To specify multiple possible values for a column : IN (example: type in (‘udp’,’tcp) ).
+Search for a pattern: LIKE (example: type like ‘u%’) .
+Between a certain range : BETWEEN (example: length between 5 and 10).
+ 
+ 
+Filter Logical Operations:
+logical AND : and (example: ips=10.0.05 and ports=80)
+logical OR: or (example:  ips=10.0.05 or ports=80)</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>806</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
